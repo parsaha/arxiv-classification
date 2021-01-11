@@ -13,10 +13,16 @@ There were a few things to consider initially before even attempting to categori
 * Since there are papers with more than one tag in different subjects, the models are tested based on whether they can accurately predict the most common one (i.e. the subject that the majority of tags belong to). One issue that comes up here is the fact that plenty of papers have more than one subject have the highest occurance among the tags (e.g. a paper with two tags in physics and two tags in mathematics); in each model, it is explicitly mentioned whether the model chooses to address this situation by having the "correct" subject be chosen at random among the most popular tags, or to simply clean the data so that such papers are not even part of the data used. 
 
 
+## Notes
+* Currently, the `category` part of the extracted data that is used to determine the accuracy of the classifications is randomly chosen between the categories of the most common tags for each paper. 
+* The `arxiv-metadata-oai-snapshot.json` dataset has been placed one directory higher than the rest of the project.
+
 
 ## TODO
 * Move data cleaning functions to python files and then import into notebook demonstrating data cleaning 
 * make notebook for cleaning and EDA 
+
+
 
 
 ## References
