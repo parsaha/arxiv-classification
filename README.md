@@ -1,8 +1,10 @@
 # arxiv-classification
 ## Introduction
 The arXiv houses academic papers in a range of subjects, including math and physics. The goal of this project is to use Natural Language Processing (NLP) to determine how well the title and/or abstract of an academic paper from the arXiv acts as an indicator for which academic subject the paper addresses.  
+
+Part of the interest of this project is in the idea of taking sources that are jargon-heavy with high variety and seeing how well traditional NLP classification holds up. Investigating the effectiveness of different methods against data of this variety could prove useful in applications outside of academic papers and recommendation systems. 
 ## Source
-The dataset used for this project came from [this Kaggle dataset](https://www.kaggle.com/Cornell-University/arxiv) of metadata for 1.7M+ papers on the arxiv. 
+The dataset used for this project came from [this Kaggle dataset](https://www.kaggle.com/Cornell-University/arxiv) of metadata for 1.7M+ papers on the arxiv. The version that this project is based upon was downloaded on 1/1/2021. 
 ## Methods 
 ### Cleaning the Data
 There were a few things to consider initially before even attempting to categorize any of the papers:
