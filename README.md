@@ -10,6 +10,7 @@ The dataset used for this project came from [this Kaggle dataset](https://www.ka
 There were a few things to consider initially before even attempting to categorize any of the papers:
 * For convinience, we extract the tags that correspond to the academic subjects the paper falls under, the title of the paper, and the abstract, as these are the components we need. 
 * Many scientific papers like those on the arXiv have mathematical typesetting within their titles and/or abstracts. This means <img src="https://latex.codecogs.com/svg.latex?\pi" title="\pi" /> in a paper would show up in the data as `$\\\\pi$`. 
+* Since there are papers with more than one tag in different subjects, the models are tested based on whether they can accurately predict the most common one (i.e. the subject that the majority of tags belong to). One issue that comes up here is the fact that plenty of papers have more than one subject have the highest occurance among the tags (e.g. a paper with two tags in physics and two tags in mathematics); in each model, it is explicitly mentioned whether the model chooses to address this situation by having the "correct" subject be chosen at random among the most popular tags, or to simply clean the data so that such papers are not even part of the data used. 
 
 
 
