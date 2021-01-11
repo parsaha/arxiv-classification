@@ -20,13 +20,13 @@ def clean_cats(data):
 # Takes article metadata as a string and returns the title (without quotation marks)
 def clean_title(data):
     spl = data.split('"title":')[1].split(',"comments":')[0]
-    return spl[1:-1].replace('\\n', '')
+    return spl[1:-1].replace('\\n', ' ')
 
 # ABSTRACT
 # Takes article metadata as a string and returns abstract (without quotation marks)
 def clean_ab(data):
     spl = data.split('"abstract":')[1].split(',"versions":')[0]
-    return spl[3:-1].replace('\\n', '')
+    return spl[3:-1].replace('\\n', ' ')
 
 # CATEGORY
 # Takes categories as a string (i.e. as the result of clean_cats) and returns the general category they fall under (by majority)
