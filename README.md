@@ -14,7 +14,9 @@ There were a few things to consider initially before even attempting to categori
 
 
 
-
+## TODO
+* Move data cleaning functions to python files and then import into notebook demonstrating data cleaning 
+* make notebook for cleaning and EDA 
 
 
 ## References
